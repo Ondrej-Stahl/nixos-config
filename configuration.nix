@@ -228,11 +228,11 @@
       { device = "/var/swapfile"; size = 8192; }
   ];
 networking.wireguard.interfaces.wg0 = {
-  ips = [ "10.8.0.2/24" ];
+  ips = [ "10.X.X.2/24" ];
   privateKeyFile = "/home/ondy/wg-laptop.key";
   peers = [{
     publicKey = "F0sXI172WQwnWQCMx1WivTwNnYQGLF8++eBx5/W3Tlw=";
-    allowedIPs = [ "10.8.0.0/24" ];
+    allowedIPs = [ "10.X.X.0/24" ];
     endpoint = "X.X.X.X:51820";
     persistentKeepalive = 25;
   }];
